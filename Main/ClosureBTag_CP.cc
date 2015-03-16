@@ -261,7 +261,7 @@ int main(){
     Pred_1Mu_SYS->SetBinError(j,err);
   }
   
-  TFile* fout = new TFile("Closure_CP.root", "RECREATE");
+  TFile* fout = new TFile("FinalROOTFiles/Closure_CP.root", "RECREATE");
   
   RatioPlotsBandV2( data, Pred_1Mu, "Data  1#mu", "BKg Pred 1#mu", "PredPlotsFinal/Closure_CP_1mu1Tb_Sep", "RSQ", r2B_tt[0], v_tt.at(0),1);
   RatioPlotsBandV2( data, Pred_1Mu_SYS, "Data  1#mu", "BKg Pred 1#mu", "PredPlotsFinal/Closure_CP_1mu1Tb_SYS_Sep", "RSQ", r2B_tt[0], v_tt.at(0),1);

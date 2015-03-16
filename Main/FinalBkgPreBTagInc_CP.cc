@@ -239,7 +239,7 @@ int main(){
   TotalMC->Add(w, 1.0);
 
   //Getting systemtics
-  TFile* f_sys = new TFile("Closure_CP.root");
+  TFile* f_sys = new TFile("FinalROOTFiles/Closure_CP.root");
   TH1F* sys = (TH1F*)f_sys->Get("sys");
 
   std::cout << "debug 1.5" << std::endl;
